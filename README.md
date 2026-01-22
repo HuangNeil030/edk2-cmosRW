@@ -1,5 +1,7 @@
 # edk2-cmosRW
 usd io.read/io.write cmos 
+
+
 cd /d D:\BIOS\MyWorkSpace\edk2
 edksetup.bat Rebuild
 chcp 65001
