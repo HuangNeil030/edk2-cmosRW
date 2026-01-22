@@ -1,5 +1,5 @@
-# edk2-cmosRW
-usd io.read/io.write cmos 
+# edk2-cpuioreadwriteprotocol
+usd cpuioreadwriteprotocol
 
 
 cd /d D:\BIOS\MyWorkSpace\edk2
@@ -12,6 +12,6 @@ set PYTHONUTF8=1
 
 set PYTHONIOENCODING=utf-8
 
-rmdir /s /q Build\CmosEditorPkg  
+rmdir /s /q Build\CmosProtcolPkg  
 
-build -p CmosEditorPkg\CmosEditorPkg.dsc -a X64 -t VS2019 -b DEBUG
+build -p CmosProtcolPkg\CmosProtcolPkg.dsc -a X64 -t VS2019 -b DEBUG
