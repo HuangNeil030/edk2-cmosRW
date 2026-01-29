@@ -1,0 +1,38 @@
+[Defines]
+  INF_VERSION                    = 0x00010019
+  BASE_NAME                      = CmosRwApp
+  FILE_GUID                      = 3D9E0C13-4C8A-4E36-9E0A-6F0F2C2C7B01
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+  UEFI_HII_RESOURCE_SECTION  	 = TRUE
+  MODULE_UNI_FILE            	 = CmosRwApp.uni
+
+[Sources]
+  CmosRwApp.c
+
+[Packages.X64]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[LibraryClasses.X64]
+## @LIB_INSTANCES
+#  MdePkg/Library/BasePrintLib/BasePrintLib.inf
+#  MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
+#  MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf
+#  MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
+#  MdePkg/Library/BaseDebugPrintErrorLevelLib/BaseDebugPrintErrorLevelLib.inf
+#  MdePkg/Library/BaseLib/BaseLib.inf
+#  MdeModulePkg/Library/DxeReportStatusCodeLib/DxeReportStatusCodeLib.inf
+#  MdeModulePkg/Library/PeiDxeDebugLibReportStatusCode/PeiDxeDebugLibReportStatusCode.inf
+#  MdePkg/Library/BaseMemoryLib/BaseMemoryLib.inf
+#  MdePkg/Library/DxePcdLib/DxePcdLib.inf
+#  MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf
+#  MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf
+#  MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf
+#  MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf
+#  MdePkg/Library/UefiLib/UefiLib.inf
+  
+
+[Protocols.X64]
+  gEfiPciRootBridgeIoProtocolGuid
