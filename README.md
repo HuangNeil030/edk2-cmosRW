@@ -207,6 +207,9 @@ Buffer == NULL
 
 
 
+
+
+
 cd /d D:\BIOS\MyWorkSpace\edk2
 
 edksetup.bat Rebuild
